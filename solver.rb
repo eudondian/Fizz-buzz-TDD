@@ -1,11 +1,11 @@
 class Solver
-  def factorial(n)
-    if n.zero?
+  def factorial(num)
+    if num.zero?
       1
-    elsif n.negative?
+    elsif num.negative?
       raise 'Negative number entered'
     else
-      n * factorial(n - 1)
+      num * factorial(num - 1)
     end
   end
 
