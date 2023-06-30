@@ -19,9 +19,9 @@ describe Solver do
     end
     context 'test reverse method in solver class' do
         it 'returns reversed string' do
-          reversed_string = solve.reverse('artur')
-          expected_str = 'rutra'
-          expect(reversed_string).to eq(expected_str)
+          @reversed_string = solve.reverse('hello')
+          @expected_str = 'olleh'
+          expect(@reversed_string).to eq(@expected_str)
         end
       end
 
